@@ -10,56 +10,57 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="img/favicon.png" />
-    
 
-    <title>CV Daniel Palacio</title>
+    <title>Curriculum Vitae</title>
   </head>
   <body>
     <div class="container-fluid" id="arriba">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3 bg-primary text-center">
-            <img class="card-img-top rounded-circle"
-            src=https://randomuser.me/api/portraits/men/60.jpg alt="Foto CV"
+          <div id="foto2" class="col-sm-3 sideBar text-center">
+            <img id="foto" class="rounded-circle"
+            src='img/perfil-anonimo.jpg' alt="Foto CV"
             style="width: 180px; height: 180px;">
           </div>
-          <div class="col-sm-9">
+          <div id="membrete" class="col-sm-9">
             <h2 class="text-center">Curriculum Vitae</h2>
-            <h1
+            <h1 id="nombre"
               class="text-center">
-              Adam Gregory
+              
             </h1>
             <br />
             <hr />
           </div>
-          <div class="col-sm-3 bg-primary"></div>
+          <div class="col-sm-3 sideBar"></div>
           <div class="col-sm-9">
-            <button name="btnPresen" class="btn-primary">
-              Presentación
+            <button name="btnPresen" class="btn btnPrincipal">
+              <i class="fa-solid fa-person-chalkboard"></i> Presentación
             </button>
-            <a href="#educacion"
-              ><button name="btnEdu" class="btn-primary">Educación</button></a
-            >
+            <a href="#educacion">
+              <button name="btnEdu" class="btn btnPrincipal">
+                <i class="fa-solid fa-user-graduate"></i> Educación</button>
+            </a>
             <a href="#conocimientos">
-              <button name="btnConoc" class="btn-primary">
-                Conocimiento
-              </button></a
-            >
-            <a href="#experiencia"
-              ><button name="btnExp" class="btn-primary">Experiencia</button></a
-            >
-            <a href="#contacto"
-              ><button name="btnCont" class="btn-primary">Contacto</button></a
-            >
+              <button name="btnConoc" class="btn btnPrincipal"> 
+                <i class="fa-solid fa-brain"></i> Conocimiento</button>
+              </a>
+            <a href="#experiencia">
+              <button name="btnExp" class="btn btnPrincipal">
+                <i class="fa-solid fa-business-time"></i> Experiencia</button>
+            </a>
+            <a href="#contacto">
+              <button name="btnCont" class="btn btnPrincipal">
+                <i class="fa-solid fa-address-card"></i> Contacto</button>
+            </a>
           </div>
 
-          <div class="col-sm-3 bg-primary"></div>
+          <div class="col-sm-3 sideBar"></div>
           <div class="col-sm-9">
             <div class="row">
-              <div id="presentacion" class="col-sm-11">
+              <div id="presentacion" class="col-sm-11 datosCV">
                 <br />
                 <h5>Presentación:</h5>
                 <p>
@@ -81,7 +82,8 @@
                 </a>
               </div>
 
-              <div id="educacion" class="col-sm-11">
+              <div id="educacion" class="col-sm-11 datosCV">
+                <br />
                 <h5>Educación:</h5>
                 <p>
                   Bachiller Publico - Colegio Domingo F. Sarmiento - Jesus Maria
@@ -100,7 +102,8 @@
                 </a>
               </div>
 
-              <div id="conocimientos" class="col-sm-11">
+              <div id="conocimientos" class="col-sm-11 datosCV">
+                <br />
                 <h5>Conocimientos</h5>
                 <br />
                 <p style="line-height: 2px">Operacion de PC ★★★★★</p>
@@ -125,7 +128,8 @@
                 </a>
               </div>
 
-              <div id="experiencia" class="col-sm-11">
+              <div id="experiencia" class="col-sm-11 datosCV">
+                <br />
                 <h5>Experiencia laboral:</h5>
                 <p>1997-1998 - Kiosco XXXXXXXXX</p>
                 <p>1999-2000 - Tecnico en Computadoras</p>
@@ -139,25 +143,27 @@
                 </a>
               </div>
 
-              <div id="contacto" class="col-sm-11">
-              <h5>Contacto:</h5>
-              <p><i class="fa-solid fa-mobile-screen"></i> 0351-4786555</p>
-              <p><i class="fa-regular fa-envelope"></i> gregory@gmail.com</p>
-              <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/">  https://www.linkedin.com/in/gregory/</a></p>
-              <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/">  https://www.instagram.com/gregory/</a></p>
-              <hr />
-            </div>
+              <div id="contacto" class="col-sm-11 datosCV">
+                <br />
+                <h5>Contacto:</h5>
+                <p id="celular"><i class="fa-solid fa-mobile-screen"></i> </p>
+                <p id="domicilio"> </p>
+                <p id="mail"> </p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/">  https://www.linkedin.com/in/</a></p>
+                <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/">  https://www.instagram.com/</a></p>
+                <hr />
+              </div>
 
-            <div class="col-sm-1">
-              <a href="#arriba"
-                ><button class="btn btn-outline-danger btn-sm">˄</button>
-              </a>
+              <div class="col-sm-1">
+                <a href="#arriba"
+                  ><button class="btn btn-outline-danger btn-sm">˄</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <footer></footer>
   </body>
   <script src="js/javascript.js"></script>

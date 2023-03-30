@@ -7,3 +7,33 @@ h5 {
     font-family: 'Comfortaa';
     font-size: 24px;
 }
+
+.datosCV:hover{
+
+  background-color:lightgray ;
+
+}
+
+.datosCV:hover h5{
+  font-weight: bold;
+  color:blue ;
+}
+
+#membrete {
+  background: no-repeat url('../img/pngtree-blue.jpg');
+  background-size:cover;
+}
+
+.btnPrincipal {
+  background-color: #1d4970;
+  color: whitesmoke;
+}
+
+.btnPrincipal:hover {
+  background-color: cadetblue;
+
+}
+
+.sideBar {
+  background-image : url(../img/side.jpg);
+}
